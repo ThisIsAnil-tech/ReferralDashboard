@@ -1,0 +1,107 @@
+.detailsContainer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 28px 60px;
+}
+
+.pageTitle {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #A07828;
+  letter-spacing: -0.6px;
+  margin-bottom: 24px;
+}
+
+.detailsCard {
+  background: #FFFAF0;
+  border: 1px solid #F0E4CC;
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 4px 12px rgba(160, 120, 40, 0.10);
+}
+
+.partnerName {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #3D2E1A;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #FFE8B8;
+}
+
+.detailsList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.detailsList > div {
+  padding: 16px;
+  background: #FFF9EB;
+  border-radius: 6px;
+  border: 1px solid #F0E4CC;
+}
+
+.detailLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #9A8A74;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-bottom: 4px;
+}
+
+.detailValue {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #3D2E1A;
+}
+
+.profit {
+  color: #2E8B57;
+}
+
+.errorState {
+  background: #FFF0F1;
+  border: 1px solid #F5C6CB;
+  color: #D94452;
+  padding: 16px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 28px;
+  padding: 12px 24px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #3D2E1A;
+  background: #FFE8B8;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.backLink::before {
+  content: '←';
+  font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  .detailsContainer {
+    padding: 28px 16px 40px;
+  }
+
+  .detailsList {
+    grid-template-columns: 1fr;
+  }
+
+  .pageTitle {
+    font-size: 1.4rem;
+  }
+}

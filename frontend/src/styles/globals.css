@@ -1,0 +1,240 @@
+:root {
+  --cream-50:  #FFFDF7;
+  --cream-100: #FFF9EB;
+  --cream-200: #FFF3D6;
+  --cream-300: #FFE8B8;
+  --cream-400: #FFDDA0;
+  --cream-500: #FFD080;
+  --cream-600: #E8B95C;
+  --cream-700: #C99A3A;
+  --cream-800: #A07828;
+  --cream-900: #7A5B1C;
+
+  --text-primary:   #3D2E1A;
+  --text-secondary: #6B5740;
+  --text-muted:     #9A8A74;
+
+  --color-error:      #D94452;
+  --color-error-bg:   #FFF0F1;
+  --color-error-border: #F5C6CB;
+  --color-success:    #2E8B57;
+  --color-success-bg: #EAFAF1;
+
+  --surface:       #FFFDF7;
+  --surface-card:  #FFFAF0;
+  --surface-hover: #FFF3D6;
+  --border:        #F0E4CC;
+  --border-focus:  #E8B95C;
+
+  --shadow-sm: 0 1px 3px rgba(160, 120, 40, 0.08);
+  --shadow-md: 0 4px 12px rgba(160, 120, 40, 0.10);
+  --shadow-lg: 0 8px 24px rgba(160, 120, 40, 0.12);
+
+  --font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #FFFDF7;
+  color: #3D2E1A;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a {
+  color: #C99A3A;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: 64px;
+  background: #FFF3D6;
+  border-bottom: 1px solid #F0E4CC;
+  box-shadow: 0 1px 3px rgba(160, 120, 40, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand-link {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #A07828;
+  letter-spacing: -0.5px;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6B5740;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.logout-button {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #D94452;
+  background: #FFF0F1;
+  border: 1px solid #F5C6CB;
+  padding: 8px 20px;
+  border-radius: 6px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 24px 32px;
+  margin-top: 48px;
+  background: #FFF3D6;
+  border-top: 1px solid #F0E4CC;
+  font-size: 0.85rem;
+  color: #9A8A74;
+}
+
+.footer-brand {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #A07828;
+}
+
+footer nav {
+  display: flex;
+  gap: 20px;
+}
+
+footer nav a {
+  color: #6B5740;
+  font-weight: 500;
+}
+
+.footer-copyright {
+  color: #9A8A74;
+  font-size: 0.8rem;
+}
+
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #C99A3A;
+}
+
+.notFoundContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 40px 24px;
+  text-align: center;
+  background: #FFFDF7;
+}
+
+.notFoundContainer h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #A07828;
+  margin-bottom: 12px;
+  letter-spacing: -1px;
+}
+
+.notFoundContainer p {
+  font-size: 1.1rem;
+  color: #6B5740;
+  margin-bottom: 28px;
+}
+
+.notFoundLink {
+  display: inline-block;
+  padding: 12px 28px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #3D2E1A;
+  background: #FFE8B8;
+  border-radius: 10px;
+}
+
+.referral-not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.referral-not-found-container h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #A07828;
+  margin-bottom: 16px;
+}
+
+.referral-not-found-container a {
+  font-weight: 600;
+  color: #C99A3A;
+  padding: 10px 24px;
+  border: 2px solid #FFDDA0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF9EB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFDDA0;
+  border-radius: 4px;
+}
+
+::selection {
+  background: #FFE8B8;
+  color: #3D2E1A;
+}
