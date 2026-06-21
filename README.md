@@ -15,10 +15,10 @@ A logged-in user can:
 
 ## User Flow
 
-1. **Login** — User enters email and password. On success a token is saved in a cookie and they are redirected to the dashboard. On failure an error message appears.
-2. **Dashboard** — Shows overview metrics, service summary, share referral section, and the full referrals table.
-3. **Referral Details** — Clicking a table row opens a detail page with referral ID, name, service, date, and profit.
-4. **404 Page** — Any unknown URL shows a not-found page with a link back to the dashboard.
+1. **Login** —> User enters email and password. On success a token is saved in a cookie and they are redirected to the dashboard. On failure an error message appears.
+2. **Dashboard** —> Shows overview metrics, service summary, share referral section, and the full referrals table.
+3. **Referral Details** —> Clicking a table row opens a detail page with referral ID, name, service, date, and profit.
+4. **404 Page** —> Any unknown URL shows a not-found page with a link back to the dashboard.
 
 ## Pages and Routes
 
